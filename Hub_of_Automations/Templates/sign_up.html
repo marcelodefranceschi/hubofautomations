@@ -1,0 +1,76 @@
+{% extends 'Index.html' %}
+
+{% block body %}
+
+<div class="container">
+    <h1>Sign-up an account</h1>
+    <hr>
+    <div class="row">
+        <div class="col-6" style="background-color: whitesmoke">
+            <form method="POST" action="" class="border p-4 mt-2 mb-2">
+                {{ form_sign_up.csrf_token }}
+                <legend>Sign-up</legend>
+                <fieldset>
+                    <div class="form-group">
+                        {{ form_sign_up.username.label(class="form-control-label") }}
+                        {% if form_sign_up.username.errors %}
+                            {{ form_sign_up.username(class="form-control is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form_sign_up.username.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>    
+                        {% else %}
+                            {{ form_sign_up.username(class="form-control") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form_sign_up.email.label(class="form-control-label") }}
+                        {% if form_sign_up.email.errors %}
+                            {{ form_sign_up.email(class="form-control is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form_sign_up.email.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>    
+                        {% else %}
+                            {{ form_sign_up.email(class="form-control") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form_sign_up.password.label(class="form-control-label") }}
+                        {% if form_sign_up.password.errors %}
+                            {{ form_sign_up.password(class="form-control is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form_sign_up.password.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>    
+                        {% else %}
+                            {{ form_sign_up.password(class="form-control") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form_sign_up.confirm_password.label(class="form-control-label") }}
+                        {% if form_sign_up.confirm_password.errors %}
+                            {{ form_sign_up.confirm_password(class="form-control is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form_sign_up.confirm_password.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>    
+                        {% else %}
+                            {{ form_sign_up.confirm_password(class="form-control") }}
+                        {% endif %}
+                    </div>
+                </fieldset>
+                {{ form_sign_up.sign_up_submit_button(class="btn btn-primary mt-2") }}
+            </form>
+        </div>
+        <div class="col-6">
+            <h1></h1>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

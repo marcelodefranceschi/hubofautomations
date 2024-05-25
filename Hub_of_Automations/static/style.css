@@ -1,0 +1,138 @@
+
+
+#header {
+    background-color: lightslategrey;
+    }
+
+#nh-logo {
+    position: relative;
+    top: 70px;
+    left: 80px;
+    background-color: white;
+    color: lightyellow;
+
+}
+
+#mace-logo {
+    position: relative;
+    top: -45px;
+    left: 980px;
+    background-color: white;
+  
+}
+
+
+#nhsw {
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: -50px;
+    
+}
+
+
+
+#hub {
+    text-align: center;
+    padding-left: 20px;
+    position: relative;
+    top: -40px;
+    font-weight: bold;
+    
+}
+
+
+#title-header {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    top: -30px;
+    font-style: italic;
+
+
+}
+
+
+.fs-2 {
+    font-weight: bold;
+    color: purple;
+}
+
+
+#a358 {
+    font-weight: bold; 
+    background-color: navy; 
+    color: white;
+    height: 60px;
+    text-align: center;
+    padding-left: 20px;
+   
+
+}
+
+#a358-side {
+    position: relative;
+    top: 20px;
+
+}
+
+
+#a358-payments {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+
+}
+
+
+.flex-container {
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  border: 2px solid #555;
+  border-collapse: collapse;
+  font:
+    16px "Lucida Grande",
+    "Helvetica",
+    "Arial",
+    sans-serif;
+}
+
+th,
+td {
+  border: 1px solid #555;
+  border-bottom: 0.5px dotted black;
+  padding: 2px 8px 0;
+  text-align: left;
+}
+
+thead > tr > th {
+  background-color: #cce;
+  font-size: 18px;
+  border-bottom: 2px solid #555;
+  color: black;
+}
+
+.total {
+    border-top: 2px solid #555;
+    font-weight: bold;
+}
+
